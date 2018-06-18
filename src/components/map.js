@@ -4,8 +4,8 @@ import { GoogleMap, Marker, withScriptjs, withGoogleMap } from 'react-google-map
 
 const MapWithAMarker = withScriptjs(withGoogleMap(props => 
     <GoogleMap
-      defaultZoom={8}
-      defaultCenter={{ lat: 37.805, lng: -122.257 }}
+      defaultZoom={14}
+      center={props.center}
     >
       {props.results.map((marker, index) => {
         return (
@@ -20,7 +20,36 @@ const MapWithAMarker = withScriptjs(withGoogleMap(props =>
 
 
 class Map extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      currentLatLng: {
+        lat: 0,
+        lng: 0
+      }
+    }
+  }
+getGeoLocation = () => {
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+          position => {
+              console.log("this is our position coords",position.coords);
+              this.setState(prevState => ({
+                  currentLatLng: {
+                      ...prevState.currentLatLng,
+                      lat: position.coords.latitude,
+                      lng: position.coords.longitude
+                  }
+              }))
+          }
+      )
+  } else {
+      error => console.log(error)
+  }
+}
   render() {
+    
+    this.getGeoLocation()
     return (
     <MapWithAMarker
     googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places"
@@ -28,6 +57,7 @@ class Map extends React.Component {
     containerElement={<div style={{ height: `400px` }} />}
     mapElement={<div style={{ height: `100%` }} />}
     results={this.props.results}
+    center={this.state.currentLatLng}
     />
     );
   }
