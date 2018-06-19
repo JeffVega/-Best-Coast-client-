@@ -1,16 +1,20 @@
+/*global google*/
 import React from 'react';
 import {connect} from 'react-redux';
 import { GoogleMap, Marker, withScriptjs, withGoogleMap } from 'react-google-maps';
 
 const MapWithAMarker = withScriptjs(withGoogleMap(props => 
     <GoogleMap
+    ref={(ref) => {this.map = ref;}}
       defaultZoom={14}
+      bounds={props.bounds}
       center={props.center}
     >
       {props.results.map((marker, index) => {
         return (
           <Marker 
             key={index}
+            title={"Location...."}
             position={marker.geometry.location}
           />
         )
@@ -26,7 +30,11 @@ class Map extends React.Component {
       currentLatLng: {
         lat: 0,
         lng: 0
-      }
+      },
+      zoom:null,
+      bounds:null,
+      markers:[],
+      showCenterInfo:true
     }
   }
 getGeoLocation = () => {
@@ -47,9 +55,18 @@ getGeoLocation = () => {
       error => console.log(error)
   }
 }
+
+zoomToMarkers = () => {
+  const bounds = map.getBounds()
+  console.log("this our bounds",bounds)
+
+}
   render() {
-    
+    console.log("this is our props",this.props)
+    console.log("this is our ref",this.map)
+    // console.log("this is our bounds",this.state.bounds)
     this.getGeoLocation()
+    // this.zoomToMarkers()
     return (
     <MapWithAMarker
     googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places"
@@ -58,6 +75,7 @@ getGeoLocation = () => {
     mapElement={<div style={{ height: `100%` }} />}
     results={this.props.results}
     center={this.state.currentLatLng}
+    bounds={this.state.bounds}
     />
     );
   }
