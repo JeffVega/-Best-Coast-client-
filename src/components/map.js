@@ -56,13 +56,13 @@ getGeoLocation = () => {
   }
 }
 
-zoomToMarkers = () => {
-  const bounds = map.getBounds()
-  console.log("this our bounds",bounds)
+// zoomToMarkers = () => {
+//   const bounds = map.getBounds()
+//   console.log("this our bounds",bounds)
 
-}
+// }
   render() {
-    console.log("this is our props",this.props)
+    console.log("this is our props",this.props.results)
     console.log("this is our ref",this.map)
     // console.log("this is our bounds",this.state.bounds)
     this.getGeoLocation()
