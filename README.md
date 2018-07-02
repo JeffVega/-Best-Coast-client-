@@ -5,6 +5,8 @@
 ## Project Summary
 Wanderlust is an application for easy use of trip planning and discovering new trips all over the world with the use of google maps.
 ## Getting started
+## Login: demoUser
+## Password :demodemo
 ![wanderlust-display](https://user-images.githubusercontent.com/34497456/42012930-98d37772-7a4f-11e8-81a5-6b281de93061.JPG)
 
 We can start by looking for a specific place or type of place.
