@@ -27,6 +27,7 @@ export class LoginForm extends React.Component {
                 {error}
                 <label htmlFor="username">Username</label>
                 <Field
+                    placeholder="First Name"
                     component={Input}
                     type="text"
                     name="username"
@@ -35,6 +36,7 @@ export class LoginForm extends React.Component {
                 />
                 <label htmlFor="password">Password</label>
                 <Field
+                placeholder="First Name"
                     component={Input}
                     type="password"
                     name="password"

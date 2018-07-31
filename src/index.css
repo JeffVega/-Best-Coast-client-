@@ -9,26 +9,3 @@ body {
  background-color: #98D6A7;
 
 }
-
-.delete-button{
-  background-color: rgb(189, 79, 79);
-  border-radius: 10px;
-  border:none;
-  display: inline-block;
-padding: 8px 14px;
-margin: 4px 2px;
-text-align: center;
-text-decoration: none;
-font-size: 1em;
-font-weight: bold;
-cursor: pointer;
-color:white;
-  z-index: 4;
-}
-/* .map-contianer {
-  background:#98D6A7
-} */
-li {
-
-  list-style: none;
-}

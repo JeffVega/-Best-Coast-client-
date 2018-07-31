@@ -1,9 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
-import Photo from '../images/Clippy.png'
-import Ballon from '../images/ballon.png'
-import TripImg from '../images/trips.PNG'
 import LoginForm from './login-form';
 import '../css/landing.css'
 const mainBg = {
@@ -25,11 +22,10 @@ render(){
     }
     return (
         <div className="home">
-        <h1 className={"header-name-shower"}>wanderLust</h1>
-        <header className={"header-name"}>
-            <h1>WanderLust</h1>
+        <header className="landing-header">
+            <h1 className="landing-banner">WanderLust</h1>
             </header>
-        <div className="header-login">
+        <div className="landing-login">
             <LoginForm />
             <Link to="/register" className="landing-register-link">Register</Link>
         </div>
@@ -44,8 +40,6 @@ render(){
                 <p>Keep notes for each stop!</p>
             </div>
         </div>
-        <img className={"clippy-man"} src={Photo} />
-        <img className={'hot-air-balloon'} src={Ballon} />
         <div>
 
 
