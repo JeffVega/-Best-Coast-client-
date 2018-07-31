@@ -18,7 +18,7 @@ const GoogleMapsWrapper = compose(
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDcXgfc08bFKvh2HkOilaX112ghHvyRBkU&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div className={'map-contianer'} />,
-    mapElement: <div className="map-view" />,
+    mapElement: <div  className="map-view" />,
   }),
   
   withHandlers({

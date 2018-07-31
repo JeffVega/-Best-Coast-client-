@@ -14,6 +14,7 @@
   border:2px solid white;
 }
 .landing-login {
+  box-shadow: 10px 10px 5px grey;
   text-align: center;
   background: #fff;
   padding: 10px 10px;
@@ -37,6 +38,27 @@
   border-radius: 5px;
   outline:none;
 }
+#firstname {
+  background: #f9f9f9;
+padding:1.5px 10px;
+  border: 1px solid blue;
+border-radius: 5px;
+outline:none;
+}
+#lastname {
+  background: #f9f9f9;
+padding:1.5px 10px;
+  border: 1px solid blue;
+border-radius: 5px;
+outline:none;
+}
+#passwordConfirm {
+  background: #f9f9f9;
+padding:1.5px 10px;
+  border: 1px solid blue;
+border-radius: 5px;
+outline:none;
+}
 .login-btn{
   border: none;
   border-radius: 5px;
@@ -51,13 +73,58 @@ text-decoration: none;
   color: #0276ee;
 }
 
+.infobox-container{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.infobox-container div{
+  font-size: 30px;
+  color: black;
+  display:inline-table;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 300px;
+  background: white;
+  
+}
+.register-header {
+  text-align: center;
+}
+
+.register-form{
+    box-shadow: 10px 10px 5px grey;
+text-align: center;
+background: #fff;
+padding: 10px 10px;
+width: 400px;
+border-radius: 10px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+.register-button{
+    border: none;
+border-radius: 5px;
+background: #0276ee;
+color: white;
+font-size: 20px;
+padding: 5px 10px;
+margin: 10px 10px;
+}
+.register-login-redirect{
+  text-decoration: none;
+color: #0276ee;
+}
 @media only screen and (max-width: 426px) {
   .landing-header{
     text-align: center;
   }
   .landing-login{
     border-radius: 0;
-    width: 99%;
+    width: 95%;
     margin: 0;
   }
 }

@@ -34,8 +34,9 @@ export class Dashboard extends React.Component {
 
                 <Search />
                 <GoogleMapWrapper />
-                <Trips />
                 <Results />
+                <Trips />
+                
             </div>
         );
     }
