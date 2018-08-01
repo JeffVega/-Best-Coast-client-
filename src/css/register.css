@@ -1,0 +1,24 @@
+.register-header{
+    font-size: 5rem;
+}
+
+.register-page{
+    background-image: url('../images/reg-back.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 426px) {
+    .register-form{
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        border-radius: initial;
+        width: 100%;
+        opacity: 0.8;
+    }
+    .register-header{
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+  }

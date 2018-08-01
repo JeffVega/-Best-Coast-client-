@@ -130,6 +130,7 @@ color: #0276ee;
     text-align: center;
   }
   .landing-login{
+    border: none;
     box-shadow: none;
     border-radius: 0;
     width: 100%;
@@ -149,6 +150,18 @@ color: #0276ee;
 
 }
 @media only screen and (max-width: 1024px) {
+  .landing-background {
+    height: 100%;
+}
+.infobox-container div{
+width: 100px;
+  
+}
+.infobox-container img {
+  width: 300px;
+}
+}
+@media only screen and (max-width: 321px) {
   .landing-background {
     height: 100%;
 }
