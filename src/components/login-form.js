@@ -25,6 +25,8 @@ export class LoginForm extends React.Component {
                     this.onSubmit(values)
                 )}>
                 {error}
+                <p>Username: demoUser</p>
+                <p>password: demodemo</p>
                 <label htmlFor="username">Username</label>
                 <Field
                     placeholder="First Name"
