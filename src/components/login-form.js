@@ -26,7 +26,7 @@ export class LoginForm extends React.Component {
                 )}>
                 {error}
                 <p>Username: demoUser</p>
-                <p>password: demodemo</p>
+                <p>Password: demodemo</p>
                 <label htmlFor="username">Username</label>
                 <Field
                     placeholder="First Name"
