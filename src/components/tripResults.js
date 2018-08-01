@@ -115,6 +115,7 @@ class TripResults extends Component {
                         //need to clear input value on submit  
                         this.commentInput.value = ''  }}} >
                         <label className="add-comment-header" htmlFor="comment">Add comment</label>
+                        <br/>
                         <textarea
                             className="comment-text-area"
                             id="comment"

@@ -1,15 +1,16 @@
-.landing-header{
-  text-align: left;
-  background-image: url("https://ssl.tzoo-img.com/images/10448252.jpg?v=pre20061");
-  background-position: center;
-  color: whitesmoke;
-  height: 100px;
+.landing-background{
+  background-image: url('../images/scene.jpg');
+  background-size: cover;
 }
 
-.landing-banner{
-  margin-top: auto;
-  margin-bottom: auto;
+
+.landing-header{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  height: 50px;
+  background: wheat;
 }
+
 .landing-login{
   border:2px solid white;
 }
@@ -19,8 +20,8 @@
   background: #fff;
   padding: 10px 10px;
   width: 400px;
+  padding-top: 5px;
   border-radius: 10px;
-  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -88,7 +89,7 @@ text-decoration: none;
   border-radius: 10px;
   height: 300px;
   background: white;
-  
+  opacity: 0.8;
 }
 .register-header {
   text-align: center;
@@ -123,8 +124,31 @@ color: #0276ee;
     text-align: center;
   }
   .landing-login{
+    box-shadow: none;
     border-radius: 0;
-    width: 95%;
+    width: 100%;
     margin: 0;
+    padding: 0;
   }
+}
+@media only screen and (max-width: 2560px) {
+  .landing-background {
+    height: 100vh;
+}
+}
+@media only screen and (max-width: 1440px) {
+  .landing-background {
+    height: 100vh;
+}
+
+}
+@media only screen and (max-width: 1024px) {
+  .landing-background {
+    height: 100%;
+}
+.infobox-container div{
+width: 200px;
+  
+}
+
 }

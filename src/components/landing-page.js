@@ -25,6 +25,7 @@ render(){
         <header className="landing-header">
             <h1 className="landing-banner">WanderLust</h1>
             </header>
+            <div className='landing-background'>
         <div className="landing-login">
             <LoginForm />
             <Link to="/register" className="landing-register-link">Register</Link>
@@ -40,10 +41,8 @@ render(){
                 <p>Keep notes for each stop!</p>
             </div>
         </div>
-        <div>
+        </div>
 
-
-            </div>
         </div>
     );
 }

@@ -21,6 +21,9 @@
 display: inline;
  margin-left: 5%;
 }
+.search-input::placeholder {
+    font-size: 10px;
+}
 .form-search input{
     padding: 10px 10px;
     margin-right: 10px;
