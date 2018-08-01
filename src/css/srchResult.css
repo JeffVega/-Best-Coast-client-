@@ -18,6 +18,7 @@
      padding: 10px;
      background: #fff;
      border-radius: 5px;
+     overflow: auto;
 }
 .search-result-view li{
     list-style: none;

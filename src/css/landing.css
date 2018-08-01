@@ -87,9 +87,15 @@ text-decoration: none;
   padding: 10px 10px;
   border: 2px solid white;
   border-radius: 10px;
-  height: 300px;
+  height: 10px;
+  width: 100px;
   background: white;
   opacity: 0.8;
+}
+
+
+.infobox-container img {
+  width: 430px;
 }
 .register-header {
   text-align: center;
@@ -147,8 +153,10 @@ color: #0276ee;
     height: 100%;
 }
 .infobox-container div{
-width: 200px;
+width: 100px;
   
 }
-
+.infobox-container img {
+  width: 200px;
+}
 }

@@ -33,12 +33,15 @@ render(){
         <div className="infobox-container">
             <div className="infobox1">
                 <p>Plan your next trip!</p>
+                <img src='https://user-images.githubusercontent.com/34497456/43499224-56e658f0-94ff-11e8-8389-6860ce7c9565.gif'/>
             </div>
             <div className="infobox2">
                 <p>Add unique destinations!</p>
+                <img src='https://user-images.githubusercontent.com/34497456/43499356-e717058c-94ff-11e8-9546-6976ca91f554.gif'/>
             </div>
             <div className="infobox3">
                 <p>Keep notes for each stop!</p>
+                <img src='https://user-images.githubusercontent.com/34497456/43499443-595cd43c-9500-11e8-8e37-88c0b8447c18.gif'/>
             </div>
         </div>
         </div>
