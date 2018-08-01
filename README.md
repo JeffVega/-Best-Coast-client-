@@ -8,12 +8,15 @@ Wanderlust is an application for easy use of trip planning and discovering new t
 ## Login: demoUser
 ## Password :demodemo
 > We can start by looking for a specific place or type of place.
+
 ![wanderlust-search](https://user-images.githubusercontent.com/34497456/43499224-56e658f0-94ff-11e8-8389-6860ce7c9565.gif)
 
 > Our results should render with google maps
+
 ![wanderlust-adding](https://user-images.githubusercontent.com/34497456/43499356-e717058c-94ff-11e8-9546-6976ca91f554.gif)
 
 > adding comments to your trips
+
 ![wanderlust-comment](https://user-images.githubusercontent.com/34497456/43499443-595cd43c-9500-11e8-8e37-88c0b8447c18.gif)
 
 ## View the Project live here:
