@@ -106,10 +106,11 @@
   @media only screen and (max-width: 426px) {
     .result-map-view{
         position: relative;
+        border: none;
         border-radius: initial;
         width: 100%;
         height:300px;
-        left: 0%;
+        left: 0;
         margin: 0;
         padding: 0;
     }
