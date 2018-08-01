@@ -7,31 +7,17 @@ Wanderlust is an application for easy use of trip planning and discovering new t
 ## Getting started
 ## Login: demoUser
 ## Password :demodemo
-![wanderlust-display](https://user-images.githubusercontent.com/34497456/42012930-98d37772-7a4f-11e8-81a5-6b281de93061.JPG)
-
 We can start by looking for a specific place or type of place.
-![wander-search](https://user-images.githubusercontent.com/34497456/42012962-cf0fe71c-7a4f-11e8-9c1e-1c869eae608f.png)
+![wanderlust-search](https://user-images.githubusercontent.com/34497456/43499224-56e658f0-94ff-11e8-8389-6860ce7c9565.gif)
 
-Our results should render with 
-![wanderlust result](https://user-images.githubusercontent.com/34497456/42013038-2b932594-7a50-11e8-98d1-48c33213479e.png)
+Our results should render with google maps
+![wanderlust-adding](https://user-images.githubusercontent.com/34497456/43499356-e717058c-94ff-11e8-9546-6976ca91f554.gif)
 
-Onlick could display our information of the location
- 
-Infomation part 1|Infomation part 2
------------------ | -----------------
-![extra info part one](https://user-images.githubusercontent.com/34497456/42013154-be43f3fa-7a50-11e8-8926-411773e5e3cd.JPG)|![information part two](https://user-images.githubusercontent.com/34497456/42013169-d4b88394-7a50-11e8-91d8-af84af728365.JPG)
-
-By pressing on the new trip 
-Onlick displays our information of the location 
-
-adding a trip| rendering a trip
------------- | -------------
-![wanderlust-add-trip](https://user-images.githubusercontent.com/34497456/42013204-0a15c51a-7a51-11e8-8159-4ac61758bf49.JPG)|![rending trips](https://user-images.githubusercontent.com/34497456/42013321-873b4b64-7a51-11e8-8f1c-d1acdf4340e5.JPG)
-
-
+adding comment to your trips
+![wanderlust-comment](https://user-images.githubusercontent.com/34497456/43499443-595cd43c-9500-11e8-8e37-88c0b8447c18.gif)
 
 ## View the Project live here:
-https://sleepy-leakey-e90827.netlify.com/
+https://wanderlust-travel-app.netlify.com/
 
 ## View the Backend code here:
 https://github.com/JeffVega/Best-coast-backend
